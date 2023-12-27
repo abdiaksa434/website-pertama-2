@@ -257,6 +257,19 @@ body{
     font-weight: 600;
     text-align: center;
 }
+
+/* agar tidak terjadi prevent default */
+.img-porto a {
+    pointer-events: auto;
+}
+/* mengatur teks agar tidak kebablasan */
+.img-porto  {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
 .portofolio-row .img-porto img:hover{
     transform: scale(1.1);
 }
@@ -394,11 +407,6 @@ footer .footer-content{
 
 .footer-sosmed .icon-footer a{
     padding: 1rem;
-}
-
-
-.img-porto a {
-    pointer-events: auto;
 }
 
 
